@@ -195,11 +195,11 @@
     // Agenda session detail modal
     var sessionDetails = {
       "Registration": {
-        meta: "Wed, Jun 25, 2025, 09:00 AM - 10:00 AM (IST)",
+        meta: "Thu, Jun 25, 2026, 09:00 AM - 10:00 AM (IST)",
         speakers: []
       },
       "Inaugural Session": {
-        meta: "Wed, Jun 25, 2025, 10:00 AM - 11:30 AM (IST)",
+        meta: "Thu, Jun 25, 2026, 10:00 AM - 11:30 AM (IST)",
         venue: "Saraswati Auditorium",
         speakers: [
           { name: "Shri. Gurdeep Singh", role: "Chairman & Managing Director", org: "NTPC Limited", img: "assets/images/agenda-speaker-1.jpg" },
@@ -212,11 +212,11 @@
         ]
       },
       "Refreshment Break": {
-        meta: "Wed, Jun 25, 2025, 11:30 AM - 12:00 PM (IST)",
+        meta: "Thu, Jun 25, 2026, 11:30 AM - 12:00 PM (IST)",
         speakers: []
       },
       "Opening Plenary: Integrating Climate Action with Safe Workplace & Occupational Health for a Resilient Future": {
-        meta: "Wed, Jun 25, 2025, 12:00 PM - 01:00 PM (IST)",
+        meta: "Thu, Jun 25, 2026, 12:00 PM - 01:00 PM (IST)",
         venue: "Saraswati Auditorium",
         speakers: [
           { name: "Shri. Anil Kumar Jadli", role: "Director (HR)", org: "NTPC Limited", img: "assets/images/agenda-speaker-1.jpg" },
@@ -240,15 +240,15 @@
     };
     var speakerSessionMap = {
       "Shri. Gurdeep Singh": [
-        { title: "Inaugural Session", date: "Day - 1 : Wed, Jun 25, 2025", time: "10:00 AM - 11:30 AM (IST)", venue: "Saraswati Auditorium" },
-        { title: "Closing Plenary: OSH Excellence Pathways: Reflections and Commitments for a Viksit Bharat", date: "Day - 2 : Thu, Jun 26, 2025", time: "03:20 PM - 05:00 PM (IST)", venue: "Saraswati Auditorium" }
+        { title: "Inaugural Session", date: "Day - 1 : Thu, Jun 25, 2026", time: "10:00 AM - 11:30 AM (IST)", venue: "Saraswati Auditorium" },
+        { title: "Closing Plenary: OSH Excellence Pathways: Reflections and Commitments for a Viksit Bharat", date: "Day - 2 : Fri, Jun 26, 2026", time: "03:20 PM - 05:00 PM (IST)", venue: "Saraswati Auditorium" }
       ],
       "Ms. Rachna Singh Bhal": [
-        { title: "Inaugural Session", date: "Day - 1 : Wed, Jun 25, 2025", time: "10:00 AM - 11:30 AM (IST)", venue: "Saraswati Auditorium" },
-        { title: "Closing Plenary: OSH Excellence Pathways: Reflections and Commitments for a Viksit Bharat", date: "Day - 2 : Thu, Jun 26, 2025", time: "03:20 PM - 05:00 PM (IST)", venue: "Saraswati Auditorium" }
+        { title: "Inaugural Session", date: "Day - 1 : Thu, Jun 25, 2026", time: "10:00 AM - 11:30 AM (IST)", venue: "Saraswati Auditorium" },
+        { title: "Closing Plenary: OSH Excellence Pathways: Reflections and Commitments for a Viksit Bharat", date: "Day - 2 : Fri, Jun 26, 2026", time: "03:20 PM - 05:00 PM (IST)", venue: "Saraswati Auditorium" }
       ],
       "Shri. Ravindra Kumar": [
-        { title: "Inaugural Session", date: "Day - 1 : Wed, Jun 25, 2025", time: "10:00 AM - 11:30 AM (IST)", venue: "Saraswati Auditorium" }
+        { title: "Inaugural Session", date: "Day - 1 : Thu, Jun 25, 2026", time: "10:00 AM - 11:30 AM (IST)", venue: "Saraswati Auditorium" }
       ]
     };
 
@@ -262,7 +262,7 @@
       var duration = $.trim($item.find(".agenda-content p").first().text()).replace(/\s+/g, " ");
 
       return {
-        meta: "Wed, Jun 25, 2025, " + time + " (IST)",
+        meta: "Thu, Jun 25, 2026, " + time + " (IST)",
         note: duration,
         speakers: []
       };
@@ -303,7 +303,7 @@
 
     function openSpeakerProfile(speaker, sessionContext) {
       var sessions = speakerSessionMap[speaker.name] || sessionContext || [
-        { title: $("#sessionModalTitle").text(), date: "Day - 1 : Wed, Jun 25, 2025", time: $(".session-meta").text().split(", ").slice(2).join(", ").replace(" Saraswati Auditorium", ""), venue: "Saraswati Auditorium" }
+        { title: $("#sessionModalTitle").text(), date: "Day - 1 : Thu, Jun 25, 2026", time: $(".session-meta").text().split(", ").slice(2).join(", ").replace(" Saraswati Auditorium", ""), venue: "Saraswati Auditorium" }
       ];
 
       $(".speaker-profile-img").attr("src", speaker.img).attr("alt", speaker.name);
@@ -354,13 +354,13 @@
       var speaker = $.extend({ img: $image.attr("src") }, avatarSpeakerMap[fileName] || {
         name: "Speaker",
         role: "Conference Speaker",
-        org: "NOSHE 2025"
+        org: "NOSHE 2026"
       });
       var detail = sessionDetails[getSessionTitle($item)];
       var timeText = detail && detail.meta ? detail.meta.replace("Wed, Jun 25, ", "") : $.trim($item.find("time").first().text()) + " (IST)";
       var sessionContext = [{
         title: getSessionTitle($item),
-        date: "Day - 1 : Wed, Jun 25, 2025",
+        date: "Day - 1 : Thu, Jun 25, 2026",
         time: timeText,
         venue: $item.find(".agenda-content p").first().text().indexOf("Saraswati Auditorium") !== -1 ? "Saraswati Auditorium" : "Pre Function Area"
       }];
