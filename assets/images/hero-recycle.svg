@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="420" viewBox="0 0 560 420" role="img" aria-label="Environment recycling visual">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#89d75c"/><stop offset=".6" stop-color="#b7df74"/><stop offset=".61" stop-color="#2d2119"/><stop offset="1" stop-color="#0f0c09"/></linearGradient>
+  </defs>
+  <rect width="560" height="420" fill="url(#g)"/>
+  <rect x="105" y="118" width="140" height="135" rx="6" fill="#d8b88f"/>
+  <rect x="314" y="118" width="140" height="135" rx="6" fill="#d8b88f"/>
+  <path d="M172 214l-28-45h27l16-28 20 34-15 26h35l-16 13z" fill="#1b5b34"/>
+  <path d="M392 214l-28-45h27l16-28 20 34-15 26h35l-16 13z" fill="#159348"/>
+  <circle cx="84" cy="72" r="44" fill="#ffffff" opacity=".16"/>
+  <circle cx="495" cy="342" r="62" fill="#ffffff" opacity=".11"/>
+</svg>

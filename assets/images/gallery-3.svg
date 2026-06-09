@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-label="Workshop gallery placeholder">
+  <rect width="900" height="620" fill="#0b1730"/>
+  <rect x="80" y="92" width="740" height="110" rx="8" fill="#163456"/>
+  <rect x="110" y="125" width="220" height="44" rx="6" fill="#f6b944"/>
+  <rect x="390" y="125" width="160" height="44" rx="6" fill="#00b8d9"/>
+  <rect x="610" y="125" width="170" height="44" rx="6" fill="#0fb58d"/>
+  <path d="M90 555h720v-95c-74-44-150-66-228-66-74 0-138 28-192 84-56-38-117-57-184-57-42 0-81 10-116 30z" fill="#172a48"/>
+  <circle cx="230" cy="342" r="58" fill="#f4f8fb"/>
+  <circle cx="450" cy="342" r="58" fill="#f4f8fb"/>
+  <circle cx="670" cy="342" r="58" fill="#f4f8fb"/>
+</svg>

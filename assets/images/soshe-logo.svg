@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="170" viewBox="0 0 520 170" role="img" aria-label="SOSHE logo">
+  <g transform="translate(18 22)">
+    <circle cx="60" cy="60" r="58" fill="#fff" stroke="#2aa8dc" stroke-width="5"/>
+    <path d="M18 82c28 16 58 16 92-6-14 30-50 42-82 28z" fill="#176bb2"/>
+    <path d="M23 60c15-38 42-45 54-30-24 1-36 20-40 44z" fill="#55ad46"/>
+    <path d="M52 20c18 15 25 36 18 65 27-19 34-57 6-78z" fill="#f27621"/>
+    <circle cx="83" cy="38" r="15" fill="#a5b33c"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="150" y="82" font-size="74" font-weight="900" fill="#1f76c9">S</text>
+    <text x="196" y="82" font-size="74" font-weight="900" fill="#f27621">O</text>
+    <text x="250" y="82" font-size="74" font-weight="900" fill="#1f76c9">SHE</text>
+    <text x="151" y="112" font-size="21" font-weight="900" fill="#26a34a">Society for Occupational Safety,</text>
+    <text x="151" y="137" font-size="21" font-weight="900" fill="#26a34a">Health & Environment Professionals</text>
+    <text x="151" y="157" font-size="12" font-style="italic" fill="#f27621">Empowering People and the Planet: the Pillars of a Sustainable Society</text>
+  </g>
+  <line x1="150" y1="91" x2="495" y2="91" stroke="#f27621" stroke-width="4"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="420" viewBox="0 0 560 420" role="img" aria-label="Healthcare technology visual">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2f7fb"/><stop offset=".55" stop-color="#58a5c9"/><stop offset="1" stop-color="#1d4f88"/></linearGradient>
+  </defs>
+  <rect width="560" height="420" fill="url(#g)"/>
+  <circle cx="180" cy="160" r="82" fill="#1c79b8" opacity=".55"/>
+  <circle cx="206" cy="140" r="54" fill="#ffffff" opacity=".36"/>
+  <path d="M335 115h70v70h70v70h-70v70h-70v-70h-70v-70h70z" fill="#ffffff" opacity=".88"/>
+  <g fill="none" stroke="#ffffff" stroke-width="5" opacity=".55">
+    <path d="M68 320h112M124 264v112M70 120c70 35 128 93 174 172M220 92c75 39 128 92 160 158"/>
+  </g>
+  <circle cx="454" cy="96" r="18" fill="#ffffff" opacity=".8"/>
+  <circle cx="94" cy="282" r="15" fill="#ffffff" opacity=".8"/>
+</svg>

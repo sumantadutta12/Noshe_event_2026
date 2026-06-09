@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NOSHE 2025 Conference Agenda.">
+    <title>Conference Agenda | NOSHE 2025</title>
+
+    <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/fonts/inter.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body class="agenda-page">
+    <!-- Header -->
+    <header class="site-header fixed-top">
+      <nav id="mainNavbar" class="navbar navbar-expand-lg">
+        <div class="container page-container">
+          <a class="navbar-brand" href="index.html#home" aria-label="NOSHE 2025 home">
+            <img src="assets/images/preview-logo-1.png" alt="NOSHE 2025 NTPC Conference logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbarMenu" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About NOSHE <i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about-noshe-2025.html">About NOSHE 2025</a></li>
+                  <li><a class="dropdown-item" href="foreword.html">Foreword</a></li>
+                  <li><a class="dropdown-item" href="organisers.html">Organisers</a></li>
+                  <li><a class="dropdown-item" href="show-brochure.html">Show Brochure</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conference <i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="conference-agenda.html">Conference Agenda</a></li>
+                  <li><a class="dropdown-item" href="delegate-registration.html">Delegate Registration</a></li>
+                  <li><a class="dropdown-item" href="committee-members.html">Committee Members</a></li>
+                  <li><a class="dropdown-item" href="index.html#venue">Venue</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item ms-lg-3"><span class="event-ended">Event Has Ended</span></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Agenda Hero -->
+      <section class="agenda-hero">
+        <div class="agenda-shape shape-one"></div>
+        <div class="agenda-shape shape-two"></div>
+        <div class="agenda-shape shape-three"></div>
+        <div class="container page-container text-center">
+          <h1>Conference Agenda</h1>
+          <p class="agenda-hero-subtitle">Explore the NOSHE 2025 sessions, timings, venues, and speaker-led discussions.</p>
+          <div class="agenda-actions">
+            <a href="#" class="btn agenda-btn"><i class="fa-regular fa-calendar-plus"></i> Add To Calendar</a>
+            <button type="button" class="btn agenda-btn agenda-btn-outline" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Agenda</button>
+            <a href="#" class="btn agenda-btn"><i class="fa-solid fa-download"></i> Download Agenda</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Agenda Timeline -->
+      <section class="agenda-section">
+        <div class="container page-container">
+          <div class="agenda-board">
+            <div class="agenda-sticky-tools">
+              <div class="timezone-bar">
+                <span><i class="fa-solid fa-circle-info"></i> Date and time is shown in <strong>(UTC +05:30) Asia/Calcutta.</strong></span>
+                <a href="#" class="timezone-open"><i class="fa-solid fa-earth-asia"></i> Change Timezone</a>
+              </div>
+
+              <div class="timezone-popover" aria-hidden="true">
+                <div class="timezone-dialog">
+                  <button type="button" class="timezone-close" aria-label="Close timezone selector"><i class="fa-solid fa-xmark"></i></button>
+                  <h2>Select Timezone</h2>
+                  <div class="timezone-select-wrap">
+                    <button type="button" class="timezone-select-trigger" aria-expanded="false">
+                      <span>(UTC +05:30) Asia/Calcutta</span>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="timezone-options">
+                      <button type="button">(UTC +05:00) Asia/Ashgabat</button>
+                      <button type="button">(UTC +05:00) Asia/Atyrau</button>
+                      <button type="button">(UTC +05:00) Indian/Kerguelen</button>
+                      <button type="button">(UTC +05:30) Asia/Kolkata</button>
+                      <button type="button">(UTC +05:30) Asia/Colombo</button>
+                      <button type="button" class="active">(UTC +05:30) Asia/Calcutta</button>
+                    </div>
+                  </div>
+                  <div class="timezone-actions">
+                    <button type="button" class="timezone-change">Change</button>
+                    <button type="button" class="timezone-cancel">Cancel</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="agenda-tabs-wrap">
+                <ul class="nav agenda-tabs" id="agendaTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="day-one-tab" data-bs-toggle="tab" data-bs-target="#day-one" type="button" role="tab" aria-controls="day-one" aria-selected="true">
+                      <strong>Day - 1</strong>
+                      <span>Wed, Jun 25, 2025</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="day-two-tab" data-bs-toggle="tab" data-bs-target="#day-two" type="button" role="tab" aria-controls="day-two" aria-selected="false">
+                      <strong>Day - 2</strong>
+                      <span>Thu, Jun 26, 2025</span>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="favorite-tab" data-bs-toggle="tab" data-bs-target="#favorite" type="button" role="tab" aria-controls="favorite" aria-selected="false">
+                      <strong>Favorite Sessions</strong>
+                      <span>No Sessions</span>
+                    </button>
+                  </li>
+                </ul>
+                <button class="filter-btn" type="button"><i class="fa-solid fa-filter"></i><span>Filter</span></button>
+              </div>
+            </div>
+
+            <div class="tab-content" id="agendaTabContent">
+              <div class="tab-pane fade show active" id="day-one" role="tabpanel" aria-labelledby="day-one-tab" tabindex="0">
+                <div class="agenda-list">
+                  <article class="agenda-item">
+                    <time>09:00 AM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-clipboard-list"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Registration</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour</p>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>10:00 AM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-briefcase"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Inaugural Session</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour 30 Minutes <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                      <div class="avatar-row">
+                        <img src="assets/images/agenda-speaker-1.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-2.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-3.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-4.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-5.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-6.jpg" alt="Speaker">
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>11:30 AM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-mug-saucer"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Refreshment Break</h2>
+                      <p><i class="fa-regular fa-clock"></i> 30 Minutes</p>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>12:00 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-chalkboard-user"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Opening Plenary: Integrating Climate Action with Safe Workplace & Occupational Health for a Resilient Future</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                      <div class="avatar-row">
+                        <img src="assets/images/agenda-speaker-2.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-3.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-4.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-5.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-6.jpg" alt="Speaker">
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>01:00 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-utensils"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Networking Lunch</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour <i class="fa-solid fa-location-dot"></i> Pre Function Area</p>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>02:00 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-people-roof"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Technical Session 1 : Holistic & Proactive Approaches for Management of Occupational Diseases</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour 15 Minutes <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                      <div class="avatar-row">
+                        <img src="assets/images/agenda-speaker-3.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-1.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-2.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-4.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-5.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-6.jpg" alt="Speaker">
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>03:15 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-mug-hot"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Refreshment Break</h2>
+                      <p><i class="fa-regular fa-clock"></i> 30 Minutes <i class="fa-solid fa-location-dot"></i> Pre Function Area</p>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>03:45 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-chalkboard-user"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Industry Plenary : Culture of Prevention: Shaping Workplace Safety through Culture and Values</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour 15 Minutes <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                      <div class="avatar-row">
+                        <img src="assets/images/agenda-speaker-4.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-2.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-1.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-3.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-5.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-6.jpg" alt="Speaker">
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>05:00 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-chalkboard-user"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Plenary III: Mental Health Matters: Cultivating Wellness and Resilience in the Workplace</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour 15 Minutes <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                      <div class="avatar-row">
+                        <img src="assets/images/agenda-speaker-1.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-2.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-3.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-4.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-6.jpg" alt="Speaker">
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>06:15 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-people-group"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Session on Mental Health & Stress Management</h2>
+                      <p><i class="fa-regular fa-clock"></i> 45 Minutes <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                    </div>
+                  </article>
+
+                  <article class="agenda-item">
+                    <time>07:00 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-calendar-check"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>NOSHE Cultural Program & Gala Dinner</h2>
+                      <p><i class="fa-regular fa-clock"></i> 2 Hours <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="day-two" role="tabpanel" aria-labelledby="day-two-tab" tabindex="0">
+                <div class="agenda-list">
+                  <article class="agenda-item">
+                    <time>09:30 AM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-clipboard-check"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Day 2 Registration & Networking</h2>
+                      <p><i class="fa-regular fa-clock"></i> 30 Minutes</p>
+                    </div>
+                  </article>
+                  <article class="agenda-item">
+                    <time>10:00 AM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-chalkboard-user"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Technical Session 2 : Digital Transformation in Safety, Health & Environment</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour 30 Minutes <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                      <div class="avatar-row">
+                        <img src="assets/images/agenda-speaker-3.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-4.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-1.jpg" alt="Speaker">
+                        <img src="assets/images/agenda-speaker-2.jpg" alt="Speaker">
+                      </div>
+                    </div>
+                  </article>
+                  <article class="agenda-item">
+                    <time>12:00 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-leaf"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Environment & Sustainability Leadership Forum</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                    </div>
+                  </article>
+                  <article class="agenda-item">
+                    <time>02:30 PM</time>
+                    <div class="agenda-line"><span><i class="fa-solid fa-award"></i></span></div>
+                    <div class="agenda-content">
+                      <h2>Valedictory Session & Awards</h2>
+                      <p><i class="fa-regular fa-clock"></i> 1 Hour 30 Minutes <i class="fa-solid fa-location-dot"></i> Saraswati Auditorium</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="favorite" role="tabpanel" aria-labelledby="favorite-tab" tabindex="0">
+                <div class="empty-agenda">
+                  <i class="fa-regular fa-star"></i>
+                  <h2>No favorite sessions yet</h2>
+                  <p>Select sessions from the agenda to build your personal schedule.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Agenda Filter Sidebar -->
+      <div class="filter-overlay" aria-hidden="true"></div>
+      <aside class="filter-sidebar" aria-hidden="true" aria-label="Agenda filter panel">
+        <div class="filter-header">
+          <h2>Filter</h2>
+          <button type="button" class="filter-close" aria-label="Close filter"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="filter-body">
+          <label class="filter-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search">
+          </label>
+
+          <div class="filter-accordion">
+            <div class="filter-group">
+              <button class="filter-group-toggle collapsed" type="button" data-filter-target="#tracksFilter">
+                <span>All Tracks (1)</span>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </button>
+              <div id="tracksFilter" class="filter-collapse">
+                <label><input type="checkbox"> Main Conference</label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <button class="filter-group-toggle" type="button" data-filter-target="#categoriesFilter">
+                <span>Session Categories (7)</span>
+                <i class="fa-solid fa-circle-chevron-down"></i>
+              </button>
+              <div id="categoriesFilter" class="filter-collapse open">
+                <label><input type="checkbox"> <span>Presentation</span> <i class="fa-solid fa-chalkboard-user"></i></label>
+                <label><input type="checkbox"> <span>Break</span> <i class="fa-solid fa-clock-rotate-left"></i></label>
+                <label><input type="checkbox"> <span>Lunch</span> <i class="fa-solid fa-bowl-food"></i></label>
+                <label><input type="checkbox"> <span>Tea</span> <i class="fa-solid fa-mug-saucer"></i></label>
+                <label><input type="checkbox"> <span>Keynote</span> <i class="fa-solid fa-stamp"></i></label>
+                <label><input type="checkbox"> <span>Reception</span> <i class="fa-solid fa-people-group"></i></label>
+                <label><input type="checkbox"> <span>Registration</span> <i class="fa-solid fa-list-check"></i></label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <button class="filter-group-toggle collapsed" type="button" data-filter-target="#speakersFilter">
+                <span>Speakers (45)</span>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </button>
+              <div id="speakersFilter" class="filter-collapse">
+                <label><input type="checkbox"> Dr. Ananya Rao</label>
+                <label><input type="checkbox"> Vikram Mehta</label>
+                <label><input type="checkbox"> Meera Kapoor</label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <button class="filter-group-toggle collapsed" type="button" data-filter-target="#hallsFilter">
+                <span>Halls (3)</span>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+              </button>
+              <div id="hallsFilter" class="filter-collapse">
+                <label><input type="checkbox"> Saraswati Auditorium</label>
+                <label><input type="checkbox"> Pre Function Area</label>
+                <label><input type="checkbox"> Main Hall</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-footer">
+          <button type="button" class="filter-clear">Clear Filter</button>
+          <button type="button" class="filter-apply">Apply Filter</button>
+        </div>
+      </aside>
+
+      <!-- Session Detail Modal -->
+      <div class="session-modal-overlay" aria-hidden="true">
+        <button type="button" class="session-nav session-prev" aria-label="Previous session"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="session-modal-card" role="dialog" aria-modal="true" aria-labelledby="sessionModalTitle">
+          <button type="button" class="session-close" aria-label="Close session details"><i class="fa-solid fa-xmark"></i></button>
+          <h2 id="sessionModalTitle">Registration</h2>
+          <span class="session-track"><i class="fa-solid fa-circle"></i> Track 1</span>
+          <p class="session-meta"></p>
+          <div class="session-speakers-wrap">
+            <h3>Speakers</h3>
+            <div class="session-speakers"></div>
+          </div>
+        </div>
+        <button type="button" class="session-nav session-next" aria-label="Next session"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <!-- Speaker Profile Modal -->
+      <div class="speaker-profile-overlay" aria-hidden="true">
+        <div class="speaker-profile-card" role="dialog" aria-modal="true" aria-labelledby="speakerProfileName">
+          <button type="button" class="speaker-profile-close" aria-label="Close speaker profile"><i class="fa-solid fa-xmark"></i></button>
+          <div class="speaker-profile-head">
+            <img class="speaker-profile-img" src="assets/images/agenda-speaker-1.jpg" alt="Speaker">
+            <div>
+              <h2 id="speakerProfileName">Speaker Name</h2>
+              <p class="speaker-profile-role"></p>
+              <p class="speaker-profile-org"></p>
+            </div>
+          </div>
+          <div class="speaker-profile-sessions">
+            <h3>Sessions by Speaker</h3>
+            <div class="speaker-session-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="container page-container">
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <img class="footer-logo" src="assets/images/preview-logo-1.png" alt="NOSHE 2025 logo">
+              <p>NOSHE 2025 brings together leaders and professionals from Occupational Safety, Health and Environment sectors.</p>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#why-attend">About NOSHE</a></li>
+                <li><a href="conference-agenda.html">Agenda</a></li>
+                <li><a href="index.html#venue">Venue</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <h3>Contact</h3>
+              <p><i class="fa-solid fa-envelope"></i> info@noshe2025.in</p>
+              <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+              <p><i class="fa-solid fa-location-dot"></i> Noida, Uttar Pradesh - India</p>
+            </div>
+            <div class="col-lg-3">
+              <h3>Venue</h3>
+              <p>NTPC Power Management Institute<br>E-3, Gautam Buddha Nagar, Film City, Sector 16A, Noida, Uttar Pradesh - 201301</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>© 2025 NOSHE. All rights reserved.</span>
+            <span>NTPC Conference on Occupational Safety, Health and Environment</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

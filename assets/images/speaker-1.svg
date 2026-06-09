@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" role="img" aria-label="Speaker portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0b1730"/><stop offset="1" stop-color="#00b8d9"/></linearGradient>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg)"/>
+  <circle cx="320" cy="230" r="92" fill="#f6d6bd"/>
+  <path d="M210 548c16-104 72-162 110-162s94 58 110 162" fill="#ffffff" opacity=".9"/>
+  <path d="M215 217c15-76 70-118 126-91 44 3 84 43 84 97-39-17-82-31-210-6z" fill="#17233c"/>
+  <text x="320" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">Speaker</text>
+</svg>
