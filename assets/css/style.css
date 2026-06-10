@@ -697,6 +697,204 @@ h2 {
   color: #242a38;
 }
 
+/* Conference Details */
+.conference-details-section {
+  position: relative;
+  overflow: hidden;
+  padding: 68px 0 76px;
+  background: #f7f9fc;
+}
+
+.conference-details-section::before {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -180px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: rgba(242, 116, 31, 0.1);
+}
+
+.conference-details-section::after {
+  content: "";
+  position: absolute;
+  left: -130px;
+  bottom: -170px;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: rgba(83, 103, 201, 0.1);
+}
+
+.conference-details-heading {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin-bottom: 32px;
+}
+
+.conference-details-heading span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.conference-details-heading h2 {
+  margin-bottom: 10px;
+}
+
+.conference-details-heading p {
+  max-width: 560px;
+  margin: 0;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.conference-days-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.conference-day-card {
+  overflow: hidden;
+  border: 1px solid rgba(83, 103, 201, 0.14);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 24px 58px rgba(25, 42, 95, 0.1);
+}
+
+.conference-day-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 24px 26px;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.14), transparent 38%),
+    linear-gradient(135deg, var(--blue), #243f9e);
+}
+
+.conference-day-card-alt .conference-day-head {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.14), transparent 38%),
+    linear-gradient(135deg, #123d65, var(--sector-blue));
+}
+
+.conference-day-label {
+  display: inline-flex;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.conference-day-head h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.conference-day-head i {
+  display: grid;
+  flex: 0 0 54px;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 14px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 22px;
+}
+
+.conference-timeline {
+  display: grid;
+  gap: 0;
+  padding: 8px 0;
+}
+
+.conference-session {
+  position: relative;
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px 24px 18px 26px;
+}
+
+.conference-session + .conference-session {
+  border-top: 1px solid rgba(83, 103, 201, 0.1);
+}
+
+.conference-session::before {
+  content: "";
+  position: absolute;
+  left: 137px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(83, 103, 201, 0.12);
+}
+
+.conference-session::after {
+  content: "";
+  position: absolute;
+  left: 132px;
+  top: 28px;
+  width: 11px;
+  height: 11px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: var(--orange);
+  box-shadow: 0 0 0 4px rgba(242, 116, 31, 0.15);
+}
+
+.conference-session time {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  min-height: 34px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: #253fa2;
+  background: rgba(83, 103, 201, 0.1);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.conference-session span {
+  display: inline-flex;
+  margin-bottom: 6px;
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.conference-session h4 {
+  margin: 0;
+  color: #111827;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 650;
+}
+
 /* Special Attractions */
 .special-attractions-section {
   position: relative;
@@ -811,7 +1009,7 @@ h2 {
 
 .special-attractions-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   margin-top: 30px;
 }
@@ -830,6 +1028,7 @@ h2 {
     rgba(255, 255, 255, 0.055);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
   transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+  align-items: center;
 }
 
 .special-attraction-card:hover {
@@ -2581,14 +2780,14 @@ textarea.form-control {
   background: #5367c9;
 }
 
-.about-organiser-media::after {
+/* .about-organiser-media::after {
   content: "";
   position: absolute;
   inset: 0;
   background:
     linear-gradient(180deg, rgba(14, 24, 54, 0.08), rgba(14, 24, 54, 0.66)),
     linear-gradient(135deg, rgba(83, 103, 201, 0.16), rgba(242, 116, 31, 0.22));
-}
+} */
 
 .about-organiser-photo {
   width: 100%;
@@ -3476,6 +3675,277 @@ textarea.form-control {
   font-size: 13px;
 }
 
+/* Register Now Page */
+.register-page {
+  background: #f3f7fb;
+}
+
+.register-hero {
+  position: relative;
+  overflow: hidden;
+  margin-top: 70px;
+  padding: 90px 0 82px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 76% 18%, rgba(242, 116, 31, 0.18), transparent 26%),
+    linear-gradient(135deg, #0f172a 0%, #253f84 54%, #17243f 100%);
+}
+
+.register-hero::before {
+  content: "";
+  position: absolute;
+  inset: auto -90px -160px auto;
+  width: 360px;
+  height: 360px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+}
+
+.register-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 42px;
+  align-items: center;
+}
+
+.register-hero-copy span,
+.register-side-panel > span,
+.register-form-heading span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: #ffd097;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.register-hero-copy h1 {
+  max-width: 760px;
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(36px, 4.4vw, 58px);
+  line-height: 1.08;
+  font-weight: 700;
+}
+
+.register-hero-copy p {
+  max-width: 640px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 17px;
+  line-height: 1.72;
+}
+
+.register-hero-card {
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px);
+}
+
+.register-hero-card div {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 13px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.register-hero-card i {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+  color: #ffffff;
+  background: rgba(242, 116, 31, 0.88);
+}
+
+.register-hero-card span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.register-section {
+  padding: 64px 0 78px;
+}
+
+.register-shell {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.register-side-panel,
+.register-form {
+  border: 1px solid rgba(83, 103, 201, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 24px 58px rgba(25, 42, 95, 0.1);
+}
+
+.register-side-panel {
+  padding: 34px;
+  color: #ffffff;
+  background:
+    linear-gradient(145deg, rgba(19, 39, 79, 0.96), rgba(83, 103, 201, 0.94)),
+    var(--blue);
+}
+
+.register-side-panel h2 {
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-size: 31px;
+}
+
+.register-side-panel p {
+  margin-bottom: 24px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.register-side-panel ul {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.register-side-panel li {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-side-panel li i {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 11px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.register-form {
+  padding: 38px;
+  background: #ffffff;
+}
+
+.register-form-heading {
+  margin-bottom: 24px;
+}
+
+.register-form-heading span {
+  color: var(--orange);
+}
+
+.register-form-heading h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 32px;
+}
+
+.register-form .form-label {
+  color: #1f2937;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.register-form .form-label sup,
+.register-consent sup {
+  color: var(--orange);
+}
+
+.register-form .form-control,
+.register-form .form-select {
+  min-height: 48px;
+  border: 1px solid #dfe5ef;
+  border-radius: 10px;
+  color: #111827;
+  background-color: #fbfcff;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.register-form textarea.form-control {
+  min-height: 116px;
+}
+
+.register-form .form-control:focus,
+.register-form .form-select:focus {
+  border-color: rgba(83, 103, 201, 0.55);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(83, 103, 201, 0.1);
+}
+
+.register-consent {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  margin: 22px 0 24px;
+  padding: 15px 16px;
+  border: 1px solid rgba(242, 116, 31, 0.18);
+  border-radius: 12px;
+  background: rgba(242, 116, 31, 0.06);
+}
+
+.register-consent input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--orange);
+}
+
+.register-consent label {
+  margin: 0;
+  color: #374151;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.register-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 10px;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--orange), #e85d22);
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0 16px 30px rgba(242, 116, 31, 0.26);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.register-submit-btn:hover,
+.register-submit-btn:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(242, 116, 31, 0.34);
+}
+
 /* Agenda Filter Sidebar */
 .filter-overlay {
   position: fixed;
@@ -4117,6 +4587,10 @@ body.session-open {
     grid-column: span 2;
   }
 
+  .conference-days-grid {
+    grid-template-columns: 1fr;
+  }
+
   .special-attractions-shell {
     grid-template-columns: 1fr;
   }
@@ -4152,6 +4626,15 @@ body.session-open {
 
   .objectives-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .register-hero-grid,
+  .register-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .register-hero-card {
+    max-width: 560px;
   }
 }
 
@@ -4344,6 +4827,49 @@ body.session-open {
     min-height: auto;
   }
 
+  .conference-details-section {
+    padding: 52px 0 58px;
+  }
+
+  .conference-details-heading {
+    margin-bottom: 24px;
+  }
+
+  .conference-day-head {
+    padding: 21px 20px;
+  }
+
+  .conference-day-head h3 {
+    font-size: 21px;
+  }
+
+  .conference-day-head i {
+    flex-basis: 46px;
+    width: 46px;
+    height: 46px;
+    font-size: 19px;
+  }
+
+  .conference-session {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 18px 20px 18px 42px;
+  }
+
+  .conference-session::before {
+    left: 20px;
+  }
+
+  .conference-session::after {
+    left: 15px;
+    top: 24px;
+  }
+
+  .conference-session time {
+    justify-content: flex-start;
+    width: fit-content;
+  }
+
   .audience-shell {
     padding: 30px 22px;
   }
@@ -4459,6 +4985,36 @@ body.session-open {
   .contact-form {
     padding: 30px 22px;
     border-radius: 0 0 18px 18px;
+  }
+
+  .register-hero {
+    padding: 68px 0 58px;
+  }
+
+  .register-hero-grid {
+    gap: 28px;
+  }
+
+  .register-hero-copy h1 {
+    font-size: 36px;
+  }
+
+  .register-section {
+    padding: 48px 0 58px;
+  }
+
+  .register-side-panel,
+  .register-form {
+    padding: 28px 22px;
+  }
+
+  .register-form-heading h2,
+  .register-side-panel h2 {
+    font-size: 28px;
+  }
+
+  .register-submit-btn {
+    width: 100%;
   }
 
   .country-dropdown {
