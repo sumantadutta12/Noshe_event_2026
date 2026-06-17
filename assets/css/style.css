@@ -808,12 +808,12 @@ h2 {
 }
 
 .home-venue-content h2 {
-  position: relative;
-  margin: 0 0 26px;
-  color: var(--orange);
-  font-size: clamp(30px, 3.4vw, 44px);
-  font-weight: 800;
-  text-transform: uppercase;
+     position: relative;
+    margin: 0 0 26px;
+    color: #161616;
+    font-size: clamp(30px, 3.4vw, 44px);
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .home-venue-content h2::after {
